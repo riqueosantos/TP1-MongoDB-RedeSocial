@@ -1,0 +1,21 @@
+{
+  "name": "tp1-mongodb-redesocial",
+  "version": "1.0.0",
+  "description": "Trabalho Prático 1 - BD NoSQL - PUC Minas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/riqueosantos/TP1-MongoDB-RedeSocial.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/riqueosantos/TP1-MongoDB-RedeSocial/issues"
+  },
+  "homepage": "https://github.com/riqueosantos/TP1-MongoDB-RedeSocial#readme"
+}
