@@ -17,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/riqueosantos/TP1-MongoDB-RedeSocial/issues"
   },
-  "homepage": "https://github.com/riqueosantos/TP1-MongoDB-RedeSocial#readme"
+  "homepage": "https://github.com/riqueosantos/TP1-MongoDB-RedeSocial#readme",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongoose": "^9.6.1"
+  }
 }
