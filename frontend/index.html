@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rede Social X</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="logo">X</div>
+      <nav class="menu">
+        <button class="menu-item active" data-section="feed">🏠 <span>Início</span></button>
+        <button class="menu-item" data-section="explorar">🔎 <span>Explorar</span></button>
+        <button class="menu-item" data-section="comunidades">👥 <span>Comunidades</span></button>
+        <button class="menu-item" data-section="salvos">🔖 <span>Salvos</span></button>
+        <button class="menu-item" data-section="perfil">👤 <span>Perfil</span></button>
+        <button class="menu-item" data-section="dashboard">📊 <span>Dashboard</span></button>
+      </nav>
+      <button class="postar-btn" id="abrirPostagem">Postar</button>
+      <div class="usuario-box" id="usuarioLogadoBox">Carregando...</div>
+    </aside>
+
+    <main class="conteudo">
+      <header class="topo">
+        <h1 id="tituloPagina">Início</h1>
+        <p>Rede social inspirada no X/Twitter usando HTML, CSS e JS puro</p>
+      </header>
+
+      <section class="composer" id="composer">
+        <div class="avatar" id="avatarComposer">U</div>
+        <div class="composer-area">
+          <textarea id="conteudoPost" maxlength="280" placeholder="O que está acontecendo?"></textarea>
+          <div class="composer-footer">
+            <span id="contador">0/280</span>
+            <button id="criarPost">Postar</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="mensagem" class="mensagem oculto"></section>
+      <section id="feed" class="feed"></section>
+    </main>
+
+    <aside class="rightbar">
+      <div class="search-box">🔎 <input id="pesquisa" placeholder="Buscar posts" /></div>
+
+      <section class="card-lateral">
+        <h2>Assuntos do momento</h2>
+        <div id="hashtagsLista"></div>
+      </section>
+
+      <section class="card-lateral">
+        <h2>Quem seguir</h2>
+        <div id="usuariosLista"></div>
+      </section>
+    </aside>
+  </div>
+
+  <div class="modal oculto" id="modalResposta">
+    <div class="modal-card">
+      <button class="fechar" id="fecharModal">×</button>
+      <h2>Responder post</h2>
+      <p id="postOriginalResumo" class="post-original"></p>
+      <textarea id="textoResposta" maxlength="280" placeholder="Poste sua resposta"></textarea>
+      <button id="enviarResposta">Responder</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

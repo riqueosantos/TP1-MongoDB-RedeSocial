@@ -12,6 +12,9 @@ const reportsRoutes = require('./src/routes/reports');
 const app = express();
 app.use(express.json());
 
+const cors = require('cors');
+app.use(cors());
+
 conectarBanco();
 
 app.use('/users', usersRoutes);
