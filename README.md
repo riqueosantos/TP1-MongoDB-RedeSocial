@@ -24,5 +24,5 @@ A aplicação utiliza MongoDB como banco de dados e demonstra modelagem NoSQL co
 
 ---
 
-## <li><a href="docs/InstrucoesDeUso.md"> Instruções de Uso</a></li>
+## <a href="docs/InstrucoesDeUso.md"> Instruções de Uso</a>
 
